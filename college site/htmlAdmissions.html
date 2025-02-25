@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <style>
+      .heading {
+        color: red;
+        font-size: 30px;
+        margin: 0;
+        display: inline-block;
+      }
+      .form-head {
+        display: inline-block;
+      }
+      .status-div,
+      .button-div {
+        text-align: center;
+        margin-bottom: 3px;
+      }
+      .form-div {
+        width: 480px;
+      }
+      input {
+        padding-bottom: 5px;
+      }
+      .form-contents {
+        display: flex;
+        width: 350px;
+        justify-content: space-between;
+        padding-bottom: 5px;
+      }
+      #State,
+      #course,
+      #department {
+        width: 177px;
+      }
+      .UploadImage {
+        width: 177px;
+      }
+      .lan-options {
+        width: 177px;
+        display: flex;
+        flex-direction: column;
+      }
+      #AddInfo {
+        width: 171px;
+        margin-bottom: 10px;
+      }
+      footer {
+        text-align: center;
+        width: 100%;
+      }
+      body {
+        margin: 10px 0 0 8px;
+      }
+      .collegeName {
+        width: 500px;
+      }
+      h1 {
+        margin-top: 15px;
+      }
+      .collegeLogo {
+        background-color: blue;
+        height: 100px;
+        width: 100px;
+      }
+      .logo {
+        height: 100px;
+        width: 100px;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-around;
+        width: 620px;
+      }
+      .SubNavBar {
+        width: inherit;
+        margin-left: -8px;
+        height: 30px;
+        display: flex;
+        background-color: rgb(222, 221, 221);
+        justify-content: space-around;
+      }
+
+      .SubNavContents {
+        width: 50%;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .NavContents {
+        display: flex;
+        justify-content: space-around;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="collegeLogo">
+        <img src="logo.png" alt="College Logo" class="logo" />
+      </div>
+      <div class="collegeName">
+        <h1>Institute of Engineering and Technology</h1>
+      </div>
+    </div>
+    <div class="SubNavBar">
+      <div class="SubNavContents">
+        <div class="NavContents">
+          <a href="htmlCollege.html">Home</a>
+          <a href="htmlAcademics.html">Academics</a>
+          <a href="htmlAdmissions.html">Admissions</a>
+          <a href="htmlGallery.html">Gallery</a>
+        </div>
+      </div>
+    </div>
+    <div class="form-div">
+      <div class="form-head"><img src="photo.png" alt="" /></div>
+      <div class="form-head">
+        <p class="heading">Student Registration Form</p>
+      </div>
+      <div class="status-div">
+        <label for="Mr."></label> <input type="radio" name="status" />Mr.
+        <label for="Mrs."></label> <input type="radio" name="status" />Mrs.
+        <label for="Ms."></label> <input type="radio" name="status" />Ms.
+      </div>
+      <div class="form-contents">
+        <label for="First Name">First Name</label
+        ><input type="text" name="first name" placeholder="first name" />
+      </div>
+      <div class="form-contents">
+        <label for="Last Name">Last Name</label>
+        <input type="text" name="last name" placeholder="last name" />
+      </div>
+      <div class="form-contents">
+        <label for="Mail-address_1">Mail Address 1</label>
+        <input type="text" name="mailAddress1" />
+      </div>
+      <div class="form-contents">
+        <label for="Mail-address_2">Mail Address 2</label>
+        <input type="text" name="mailAddress2" />
+      </div>
+      <div class="form-contents">
+        <label for="City">City</label>
+        <input type="text" name="City" />
+      </div>
+
+      <div class="form-contents">
+        <label for="department">Choose Department:</label>
+        <select id="department" name="department" required>
+          <option value="arts">Arts</option>
+          <option value="science">Science</option>
+          <option value="commerce">Commerce</option>
+        </select>
+      </div>
+
+      <div class="form-contents">
+        <label for="course">Choose Course:</label>
+        <select id="course" name="course" required>
+          <option value="english">English</option>
+          <option value="sociology">Sociology</option>
+          <option value="computer-science">Computer Science</option>
+          <option value="mathematics">Mathematics</option>
+          <option value="accounting">Accounting</option>
+          <option value="business-management">Business Management</option>
+        </select>
+      </div>
+      <div class="form-contents">
+        <label for="State">State</label>
+        <select name="State" id="State">
+          <option value="gujrat">Gujrat</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Madhya Pradesh" selected>Madhya Pradesh</option>
+        </select>
+      </div>
+      <div class="form-contents">
+        <label for="zip">Zip</label>
+        <input type="text" name="zip" />
+      </div>
+      <div class="form-contents">
+        <label for="UploadImage">Upload Photo</label>
+        <input type="file" name="UploadImage" class="UploadImage" />
+      </div>
+      <div class="form-contents">
+        <label for="Email">Email</label>
+        <input type="email" name="email" />
+      </div>
+      <div class="form-contents">
+        <label for="Mobile">Mobile</label>
+        <input type="number" name="mobile" placeholder="+91" />
+      </div>
+      <div class="form-contents">
+        <label for="Mobile">Languages known</label>
+        <div class="lan-options">
+          <div><input type="checkbox" name="Language" /> Gujrati</div>
+          <div><input type="checkbox" name="Language" /> Hindi</div>
+          <div><input type="checkbox" name="Language" /> Marathi</div>
+        </div>
+      </div>
+      <div class="form-contents">
+        <label for="AddInfo">Additional Information</label>
+        <textarea name="AddInfo" id="AddInfo" placeholder="options"></textarea>
+      </div>
+      <div class="button-div">
+        <input type="submit" /> <input type="reset" />
+      </div>
+    </div>
+    <footer><p>&copy; 2025 Chinmay Gupta. DE22103</p></footer>
+  </body>
+</html>

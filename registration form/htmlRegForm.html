@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <style>
+      .heading {
+        color: red;
+        font-size: 30px;
+        margin: 0;
+        display: inline-block;
+      }
+      .form-head {
+        display: inline-block;
+      }
+      .status-div,
+      .button-div {
+        text-align: center;
+        margin-bottom: 3px;
+      }
+      .form-div {
+        width: 480px;
+      }
+      input {
+        padding-bottom: 5px;
+      }
+      .form-contents {
+        display: flex;
+        width: 350px;
+        justify-content: space-between;
+        padding-bottom: 5px;
+      }
+      #State {
+        width: 177px;
+      }
+      .UploadImage {
+        width: 177px;
+      }
+      .lan-options {
+        width: 177px;
+        display: flex;
+        flex-direction: column;
+      }
+      #AddInfo {
+        width: 171px;
+        margin-bottom: 10px;
+      }
+      footer {
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-div">
+      <div class="form-head"><img src="photo.png" alt="" /></div>
+      <div class="form-head">
+        <p class="heading">Employee Registration Form</p>
+      </div>
+      <div class="status-div">
+        <label for="Mr."></label> <input type="radio" name="status" />Mr.
+        <label for="Mrs."></label> <input type="radio" name="status" />Mrs.
+        <label for="Ms."></label> <input type="radio" name="status" />Ms.
+      </div>
+      <div class="form-contents">
+        <label for="First Name">First Name</label
+        ><input type="text" name="first name" placeholder="first name" />
+      </div>
+      <div class="form-contents">
+        <label for="Last Name">Last Name</label>
+        <input type="text" name="last name" placeholder="last name" />
+      </div>
+      <div class="form-contents">
+        <label for="Mail-address_1">Mail Address 1</label>
+        <input type="text" name="mailAddress1" />
+      </div>
+      <div class="form-contents">
+        <label for="Mail-address_2">Mail Address 2</label>
+        <input type="text" name="mailAddress2" />
+      </div>
+      <div class="form-contents">
+        <label for="City">City</label>
+        <input type="text" name="City" />
+      </div>
+      <div class="form-contents">
+        <label for="State">State</label>
+        <select name="State" id="State">
+          <option value="gujrat">Gujrat</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Madhya Pradesh" selected>Madhya Pradesh</option>
+        </select>
+      </div>
+      <div class="form-contents">
+        <label for="zip">Zip</label>
+        <input type="text" name="zip" />
+      </div>
+      <div class="form-contents">
+        <label for="UploadImage">Upload Photo</label>
+        <input type="file" name="UploadImage" class="UploadImage" />
+      </div>
+      <div class="form-contents">
+        <label for="Email">Email</label>
+        <input type="email" name="email" />
+      </div>
+      <div class="form-contents">
+        <label for="Mobile">Mobile</label>
+        <input type="number" name="mobile" placeholder="+91" />
+      </div>
+      <div class="form-contents">
+        <label for="Mobile">Languages known</label>
+        <div class="lan-options">
+          <div><input type="checkbox" name="Language" /> Gujrati</div>
+          <div><input type="checkbox" name="Language" /> Hindi</div>
+          <div><input type="checkbox" name="Language" /> Marathi</div>
+        </div>
+      </div>
+      <div class="form-contents">
+        <label for="AddInfo">Additional Information</label>
+        <textarea name="AddInfo" id="AddInfo" placeholder="options"></textarea>
+      </div>
+      <div class="button-div">
+        <input type="submit" /> <input type="reset" />
+      </div>
+    </div>
+    <footer><p>&copy; 2025 Chinmay Gupta. DE22103</p></footer>
+  </body>
+</html>
