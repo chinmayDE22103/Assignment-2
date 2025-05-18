@@ -1,2 +1,3 @@
-# Assignment-1
-Server Side Programming - Assignment -2
+# Assignment-2
+Description: This assignment delves into more advanced HTML topics, including forms and
+tables.
